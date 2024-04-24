@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>API Response</title>
+    <style>
+        h1 {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 3.4em;
+        }
+        body {
+            width: 600px; 
+            height: 400px;
+            margin: 10px;
+        }
+        #output {
+            overflow-y: auto; /* Adds a scrollbar if text is too long */
+            font-size: 1.4em;
+        }
+        .blink_me {
+            animation: blinker 1.5s linear infinite;
+            }
+
+            @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><span style="color: darkorange">local</span><span style="color: teal">summ</span></h1>
+    <hr>
+    <div id="output">
+        <center>
+        <h2 class="blink_me">Summarizing...</h2>
+        <h3 class="blink_me">Model: Phi3</h3>
+        <img src="icon512.png" style="width:240px" class="no_blink_me"/>
+        </center>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
