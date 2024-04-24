@@ -9,6 +9,9 @@ Fast, 100% local web page summarization with the Microsoft Phi-3 LLM!
 1. Install Ollama from https://ollama.com/
 2. Make sure the Ollama app is running
 3. Install the Phi-3 model: `ollama run phi3`
+4. Address CORS Settings - [tutorial](https://medium.com/dcoderai/how-to-handle-cors-settings-in-ollama-a-comprehensive-guide-ee2a5a1beef0)
+
+
 
 ### 2. Install the localsumm Chrome extension
 1. `git clone git@github.com:samrawal/localsumm.git`
