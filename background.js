@@ -55,7 +55,7 @@ function sendTextToApi(text, sendResponse) {
     })
     .catch(error => {
         console.error('Error:', error);
-        sendResponse("Error in fetching response."); // Error handling
+        sendResponse("Error in fetching response. Make sure Ollama is running and serving on host 'localhost' and port '11434'."); // Error handling
     });
     return true; // To allow asynchronous response
 }
